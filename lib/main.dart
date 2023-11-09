@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todo_list/home.dart';
+import 'package:todo_list/view/home.dart';
 
 void main(List<String> args) {
   runApp(Myapp());
@@ -9,6 +9,8 @@ class Myapp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Home();
+    return MaterialApp(
+      home: Home(),
+    );
   }
 }
