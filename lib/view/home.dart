@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class Home extends StatelessWidget {
   const Home({super.key});
   
-  get child => null;
+
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,7 @@ class Home extends StatelessWidget {
           children: [
             ListView.builder(
               shrinkWrap:true,
-              itemCount: 100,
+              itemCount: 10,
               
               itemBuilder: (context, index) {
               return Card(
@@ -30,9 +30,10 @@ class Home extends StatelessWidget {
                         
                       }
                       if (value == 'delete') {
-                        
+                         
                       }
                     },
+                     
                     child: Icon(Icons.more),
                     
                     itemBuilder: (context) => <PopupMenuEntry<String>> [
